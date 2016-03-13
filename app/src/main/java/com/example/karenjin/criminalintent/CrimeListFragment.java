@@ -13,9 +13,12 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.squareup.otto.Subscribe;
 import com.squareup.picasso.Picasso;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -55,7 +58,6 @@ public class CrimeListFragment extends Fragment {
         }
 
     }
-
 
     private class CrimeAdapter extends RecyclerView.Adapter<CrimeHolder>{
         private List<Crime> mCrimes;
